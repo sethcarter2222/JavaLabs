@@ -1,31 +1,20 @@
 
-public class Car {
+public class Car extends Automobile implements Move{
 
-	private int yearModel;
-	private String make;
-	private int speed;
-	public Car(int modelYear, String carMake) {
-		yearModel = modelYear;
-		make = carMake;
-		speed = 0;
+	public Car() {
+		System.out.println("A new car has been created!");
 	}
 	
-	public void accelerate() {
-		speed += 5;
+	public Car(String vehicleType) {
+		System.out.println("A new " + vehicleType + " has been created!");
 	}
 
-	public void brake() {
-		speed -= 5;
-	}
-	public String getMake() {
-		return make;
-	}
-	public int getYearModel() {
-		return yearModel;
-	}
-	public int getSpeed() {
-		return speed;
+	public void addFuel(double g) {
+		
 	}
 
+	public void moveVehicle() {
+		
+	}
 
 }
